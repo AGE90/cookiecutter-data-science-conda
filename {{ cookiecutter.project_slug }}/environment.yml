@@ -1,0 +1,20 @@
+# conda env create --file environment.yml
+name: {{ cookiecutter.project_slug }}
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  {% if cookiecutter.project_packages == "All" -%}
+  - pathlib
+  - pyprojroot
+  - ipykernel
+  - pandas
+  - openpyxl
+  {% endif -%}
+  - pip
+  - python={{ cookiecutter.python_version }}
+  {% if cookiecutter.project_packages == "All" -%}
+  - pip:
+    - pyhere
+  {% endif -%}
