@@ -13,4 +13,4 @@ $ conda install cookiecutter
 ## To start a new project, run:
 ------------
 
-    cookiecutter 
+    cookiecutter https://github.com/AGE90/cookiecutter-data-science-conda
