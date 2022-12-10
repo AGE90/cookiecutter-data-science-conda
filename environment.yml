@@ -4,4 +4,3 @@ channels:
   - defaults
 dependencies:
   - cookiecutter
-prefix: C:\Users\aleja\miniconda3\envs\cookiecutter
