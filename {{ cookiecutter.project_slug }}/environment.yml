@@ -5,7 +5,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  {% if cookiecutter.project_packages == "All" -%}
+  {% if cookiecutter.project_packages == "all" -%}
   - pathlib
   - pyprojroot
   - ipykernel
@@ -14,7 +14,7 @@ dependencies:
   {% endif -%}
   - pip
   - python={{ cookiecutter.python_version }}
-  {% if cookiecutter.project_packages == "All" -%}
+  {% if cookiecutter.project_packages == "all" -%}
   - pip:
     - pyhere
   {% endif -%}
